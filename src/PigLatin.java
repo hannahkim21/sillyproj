@@ -55,7 +55,7 @@ public class PigLatin extends Input {
                 }
                 //Pig Latin Rule #3: Treat interior y's as vowels
                 String chunkstr = chunk.toString();
-                if (word.contains("y")) {
+                if (chunkstr.contains("y")) {
                     for (int i = 0; i < chunkstr.length(); i++) {
                         if (chunkstr.charAt(i) == 'y') {
                             //Treat interior y as vowel

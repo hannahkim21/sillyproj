@@ -1,4 +1,5 @@
 import org.junit.Test;
+import org.junit.runner.notification.RunListener;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
@@ -59,6 +60,17 @@ public class TranslateTest {
         Input item = new Output();
         item.readfromFile("C:\\Users\\hkhan\\Documents\\Proj1\\sillyproj\\src\\Text.txt");
         item.translateInput();
-        ((Output) item).printer();
+        String s = ((Output) item).printer();
+        System.out.println(s);
     }
+
+    @Test
+    public void gettyOne() {
+        Input item = new Output();
+        item.readfromString("conceived in Liberty, and");
+        item.translateInput();
+        String s = ((Output) item).printer();
+        assertEquals("onceivedcay inyay ibertyLay, andyay", s);
+    }
+
 }

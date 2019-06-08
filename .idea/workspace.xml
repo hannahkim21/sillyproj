@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="611ca6aa-0074-41da-a1b7-9aa2c3ec3aa9" name="Default Changelist" comment="" />
+    <list default="true" id="611ca6aa-0074-41da-a1b7-9aa2c3ec3aa9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Proj1/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Proj1/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Proj1/Output.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Proj1/Output.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Proj1/Text.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Proj1/Text.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Proj1/TranslateTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Proj1/TranslateTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Output.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Output.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PigLatin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PigLatin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Text.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Text.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TranslateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TranslateTest.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,28 +33,32 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="1" />
+          <entry key="class" value="2" />
           <entry key="java" value="11" />
+          <entry key="md" value="1" />
           <entry key="txt" value="1" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="1" />
+          <entry key="CLASS" value="2" />
           <entry key="JAVA" value="11" />
-          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="PLAIN_TEXT" value="2" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="7246" />
+          <entry key="java" value="7703" />
+          <entry key="md" value="298" />
+          <entry key="txt" value="161" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="7246" />
+          <entry key="JAVA" value="7703" />
+          <entry key="PLAIN_TEXT" value="459" />
         </counts>
       </usages-collector>
     </session>
@@ -59,11 +74,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TranslateTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="62" column="5" lean-forward="true" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
+            <state relative-caret-position="1088">
+              <caret line="64" column="5" lean-forward="true" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -72,9 +87,27 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Output.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="11" lean-forward="true" selection-start-column="11" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Input.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
+            <state relative-caret-position="425">
               <caret line="43" column="52" selection-start-line="43" selection-start-column="52" selection-end-line="43" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -86,8 +119,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/PigLatin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1513">
-              <caret line="89" column="17" lean-forward="true" selection-start-line="89" selection-start-column="17" selection-end-line="89" selection-end-column="17" />
+            <state relative-caret-position="154">
+              <caret line="59" column="56" lean-forward="true" selection-start-line="59" selection-start-column="56" selection-end-line="59" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -98,17 +131,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Text.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Output.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="34" lean-forward="true" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
+            <state relative-caret-position="51">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -131,13 +155,14 @@
         <option value="$PROJECT_DIR$/src/Floor.java" />
         <option value="$PROJECT_DIR$/src/PigLatinTest.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
-        <option value="$PROJECT_DIR$/src/Output.java" />
         <option value="$PROJECT_DIR$/src/Test/Test.java" />
         <option value="$PROJECT_DIR$/src/Test.java" />
-        <option value="$PROJECT_DIR$/src/PigLatin.java" />
         <option value="$PROJECT_DIR$/src/Input.java" />
-        <option value="$PROJECT_DIR$/src/TranslateTest.java" />
+        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/Text.txt" />
+        <option value="$PROJECT_DIR$/src/PigLatin.java" />
+        <option value="$PROJECT_DIR$/src/Output.java" />
+        <option value="$PROJECT_DIR$/src/TranslateTest.java" />
       </list>
     </option>
   </component>
@@ -181,7 +206,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560023164257" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560024863640" />
     <property name="last_opened_file_path" value="$USER_HOME$/cs61b-software/lib" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
@@ -208,11 +233,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TranslateTest.checkOneConstOnePunc" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TranslateTest.gettyOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Proj1" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TranslateTest" />
-      <option name="METHOD_NAME" value="checkOneConstOnePunc" />
+      <option name="METHOD_NAME" value="gettyOne" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -250,18 +275,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
-      <item itemvalue="JUnit.TranslateTest.checkOneConstOnePunc" />
       <item itemvalue="JUnit.TranslateTest.shortSentPunc" />
       <item itemvalue="JUnit.TranslateTest.shortSentPuncWithY" />
       <item itemvalue="JUnit.TranslateTest.longerStuff" />
+      <item itemvalue="JUnit.TranslateTest.gettyOne" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.TranslateTest.longerStuff" />
+        <item itemvalue="JUnit.TranslateTest.gettyOne" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.TranslateTest.shortSentPuncWithY" />
         <item itemvalue="JUnit.TranslateTest.shortSentPunc" />
-        <item itemvalue="JUnit.TranslateTest.checkOneConstOnePunc" />
       </list>
     </recent_temporary>
   </component>
@@ -279,34 +304,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TranslateTest_shortSentPuncWithY - 2019.06.08 at 11h 44m 40s.xml">
-      <configuration name="TranslateTest.shortSentPuncWithY" configurationId="JUnit" />
+    <history-entry file="TranslateTest_gettyOne - 2019.06.08 at 13h 06m 06s.xml">
+      <configuration name="TranslateTest.gettyOne" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TranslateTest_shortSentPuncWithY - 2019.06.08 at 11h 45m 21s.xml">
-      <configuration name="TranslateTest.shortSentPuncWithY" configurationId="JUnit" />
+    <history-entry file="TranslateTest_gettyOne - 2019.06.08 at 13h 06m 16s.xml">
+      <configuration name="TranslateTest.gettyOne" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TranslateTest_shortSentPuncWithY - 2019.06.08 at 11h 53m 08s.xml">
-      <configuration name="TranslateTest.shortSentPuncWithY" configurationId="JUnit" />
+    <history-entry file="TranslateTest_gettyOne - 2019.06.08 at 13h 08m 04s.xml">
+      <configuration name="TranslateTest.gettyOne" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TranslateTest_shortSentPuncWithY - 2019.06.08 at 12h 01m 51s.xml">
-      <configuration name="TranslateTest.shortSentPuncWithY" configurationId="JUnit" />
+    <history-entry file="TranslateTest_gettyOne - 2019.06.08 at 13h 10m 17s.xml">
+      <configuration name="TranslateTest.gettyOne" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TranslateTest_longerStuff - 2019.06.08 at 12h 04m 36s.xml">
-      <configuration name="TranslateTest.longerStuff" configurationId="JUnit" />
+    <history-entry file="TranslateTest_gettyOne - 2019.06.08 at 13h 10m 30s.xml">
+      <configuration name="TranslateTest.gettyOne" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TranslateTest_longerStuff - 2019.06.08 at 12h 07m 54s.xml">
-      <configuration name="TranslateTest.longerStuff" configurationId="JUnit" />
+    <history-entry file="TranslateTest_gettyOne - 2019.06.08 at 13h 10m 44s.xml">
+      <configuration name="TranslateTest.gettyOne" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TranslateTest_longerStuff - 2019.06.08 at 12h 08m 47s.xml">
-      <configuration name="TranslateTest.longerStuff" configurationId="JUnit" />
+    <history-entry file="TranslateTest_gettyOne - 2019.06.08 at 13h 11m 46s.xml">
+      <configuration name="TranslateTest.gettyOne" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TranslateTest_longerStuff - 2019.06.08 at 12h 40m 19s.xml">
-      <configuration name="TranslateTest.longerStuff" configurationId="JUnit" />
+    <history-entry file="TranslateTest_gettyOne - 2019.06.08 at 13h 11m 58s.xml">
+      <configuration name="TranslateTest.gettyOne" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TranslateTest_longerStuff - 2019.06.08 at 12h 41m 51s.xml">
-      <configuration name="TranslateTest.longerStuff" configurationId="JUnit" />
+    <history-entry file="TranslateTest_gettyOne - 2019.06.08 at 13h 12m 18s.xml">
+      <configuration name="TranslateTest.gettyOne" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TranslateTest_longerStuff - 2019.06.08 at 12h 42m 26s.xml">
+    <history-entry file="TranslateTest_longerStuff - 2019.06.08 at 13h 14m 26s.xml">
       <configuration name="TranslateTest.longerStuff" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -314,7 +339,7 @@
     <frame x="-6" y="-6" width="1293" height="693" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19352227" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19352227" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -323,8 +348,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.386121" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.47153026" />
+      <window_info anchor="bottom" id="Run" order="2" weight="1.0" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.36120996" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -342,9 +367,52 @@
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Maven Projects" order="7" />
     </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19352227" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.30960855" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.36120996" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Style Checker" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3291815" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Maven Projects" order="7" />
+    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/PigLatin.java</url>
+          <line>9</line>
+          <properties class="PigLatin" method="translateInput">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
@@ -366,16 +434,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/PigLatinTest.java" />
     <entry file="file://$PROJECT_DIR$/src/Test/Test.java" />
-    <entry file="jar://$USER_HOME$/cs61b-software/lib/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Input.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
+        <state relative-caret-position="425">
           <caret line="43" column="52" selection-start-line="43" selection-start-column="52" selection-end-line="43" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -383,27 +444,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$USER_HOME$/cs61b-software/lib/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/PigLatin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1513">
-          <caret line="89" column="17" lean-forward="true" selection-start-line="89" selection-start-column="17" selection-end-line="89" selection-end-column="17" />
+        <state relative-caret-position="154">
+          <caret line="59" column="56" lean-forward="true" selection-start-line="59" selection-start-column="56" selection-end-line="59" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Output.java">
+    <entry file="file://$PROJECT_DIR$/src/Text.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="34" lean-forward="true" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Text.txt">
+    <entry file="file://$PROJECT_DIR$/src/Output.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="187">
+          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TranslateTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1088">
+          <caret line="64" column="5" lean-forward="true" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -414,13 +492,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TranslateTest.java">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="62" column="5" lean-forward="true" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state>
+          <caret column="11" lean-forward="true" selection-start-column="11" selection-end-column="11" />
         </state>
       </provider>
     </entry>
