@@ -12,10 +12,19 @@ class Input {
         System.out.print("Enter text here: ");
         Scanner scan = new Scanner(System.in);
         while (scan.hasNext()) {
-            input.add(scan.next());
+            this.input.add(scan.next());
         }
         scan.close();
-        return input;
+        return this.input;
+    }
+
+    public ArrayList<String> readfromString(String str) {
+        Scanner scan = new Scanner(str);
+        while (scan.hasNext()) {
+            this.input.add(scan.next());
+        }
+        scan.close();
+        return this.input;
     }
     /*
     * Go through input ArrayList and translate using Pig Latin conventions. Overridden in PigLatin.java.
