@@ -2,12 +2,12 @@ import java.util.ArrayList;
 import java.lang.String;
 
 public class PigLatin extends Input {
+    ArrayList<String> translatedArray = new ArrayList<>();
     /*
      * Go through ArrayList and translate each word by applying the rules of Pig Latin, returning an ArrayList.
      */
     @Override
     public ArrayList<String> translateInput() {
-        ArrayList<String> translatedArray = new ArrayList<>();
         for (String word : this.input) {
             //Pig Latin Rule #1: Does the word begin with a vowel or consonant
             char first = word.charAt(0);
@@ -16,51 +16,29 @@ public class PigLatin extends Input {
                 StringBuilder newWord = new StringBuilder(word.length()+3);
                 newWord.append(word);
                 newWord.append("yay");
-                word = newWord.toString();
-                System.out.println(word);
-                translatedArray.add(word);
+                translatedArray.add(newWord.toString());
             }
             else {
                 //Pig Latin Rule #2: For consonants, chunk the contiguous consonants
+                StringBuilder chunk = new StringBuilder(word.length());
                 int index = 0;
-                char curr = word.charAt(index);
-                while (curr!='a' || curr!='A' || curr!='e' || curr!='E' || curr!='i' ||
-                        curr!='I' || curr!='o' || curr!='O' || curr!='u' || curr!='U') {
-                    if (index <= word.length()) index += 1;
-                    curr = word.charAt(index);
+                while (index < word.length()) {
+                    if (word.charAt(index)!='a' && word.charAt(index)!='A' && word.charAt(index)!='e' &&
+                            word.charAt(index)!='E' && word.charAt(index)!='i' && word.charAt(index)!='I' &&
+                            word.charAt(index)!='o' && word.charAt(index)!='O' && word.charAt(index)!='u' &&
+                            word.charAt(index)!='U') {
+                        chunk.append(word.charAt(index));
+                        index += 1;
+                    }
+                    else {
+                        break;
+                    }
                 }
-
-                String chunk = word.substring(0,index);
-                String rest = word.substring(index,word.length());
-                StringBuilder newWord = new StringBuilder(word.length()+2);
-                newWord.append(rest);
-                newWord.append(chunk);
-                newWord.append("ay");
-                word = newWord.toString();
-                System.out.println(word);
-                translatedArray.add(word);
-            }
-                for (int ch = 0; ch < word.length(); ch++) {
-                    char curr = word.charAt(ch);
-                    if ((curr=='a' || curr=='A' || curr=='e' || curr=='E' || curr=='i' ||
-                            curr=='I' || curr=='o' || curr=='O' || curr=='u' || curr=='U')) {
-                }
-            }
-
-
-        }
-        for (int i = 0; i < this.input.size(); i++) {
-            String temp = this.input.get(i);
-            for (int j = 0; j < temp.length(); j++) {
-
-                //Punctuated at end
-
-                //Not punctuated
-
-
-                //Vowel
-
-                //Consonant(s)
+                //Pig Latin Rule #3: If y is the last character in the chunk, treat it as a vowel and ignore
+                String newWord = word.substring(index);
+                newWord += chunk.toString();
+                newWord += "ay";
+                translatedArray.add(newWord);
             }
         }
         return translatedArray;
