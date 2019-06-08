@@ -1,5 +1,6 @@
 import org.junit.Test;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 import static org.junit.Assert.*;
@@ -53,5 +54,11 @@ public class TranslateTest {
         assertEquals(expect, item.translateInput());
     }
 
-
+    @Test
+    public void longerStuff() {
+        Input item = new Output();
+        item.readfromFile("C:\\Users\\hkhan\\Documents\\Proj1\\sillyproj\\src\\Text.txt");
+        item.translateInput();
+        ((Output) item).printer();
+    }
 }

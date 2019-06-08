@@ -15,7 +15,7 @@ public class PigLatin extends Input {
             String punc = "";
             int end = word.length() - 1;
                 while (end >= 0) {
-                    if (word.charAt(end)=='!' || word.charAt(end)=='.' || word.charAt(end)=='?') {
+                    if (word.charAt(end)=='!' || word.charAt(end)=='.' || word.charAt(end)=='?' || word.charAt(end)==',') {
                         punc = word.charAt(end) + punc;
                     }
                     end--;
@@ -45,7 +45,7 @@ public class PigLatin extends Input {
                             word.charAt(index)!='E' && word.charAt(index)!='i' && word.charAt(index)!='I' &&
                             word.charAt(index)!='o' && word.charAt(index)!='O' && word.charAt(index)!='u' &&
                             word.charAt(index)!='U' && word.charAt(index)!='.' && word.charAt(index)!='!'
-                            && word.charAt(index)!='?'){
+                            && word.charAt(index)!='?' && word.charAt(index)!=','){
                         chunk.append(word.charAt(index));
                         index += 1;
                     }
@@ -54,28 +54,41 @@ public class PigLatin extends Input {
                     }
                 }
                 //Pig Latin Rule #3: Treat interior y's as vowels
-                //FIXME
                 String chunkstr = chunk.toString();
-                for (int i = 1; i < chunkstr.length(); i++) {
-                    if (chunkstr.charAt(i)=='y') {
-                        //FIXME
-                        String sub = chunkstr.substring(0,i+1);
-                        chunkstr = sub;
-                        int puncstart = word.length() - punc.length();
-                        String newWord = word.substring(index, puncstart);
-                        newWord += chunkstr;
-                        newWord += "yay";
-                        newWord += punc;
+                if (word.contains("y")) {
+                    for (int i = 0; i < chunkstr.length(); i++) {
+                        if (chunkstr.charAt(i) == 'y') {
+                            //Treat interior y as vowel
+                            if (i > 0) {
+                                String sub = chunkstr.substring(0, i + 1);
+                                chunkstr = sub;
+                                int puncstart = word.length() - punc.length();
+                                String newWord = word.substring(index, puncstart);
+                                newWord += chunkstr;
+                                newWord += "yay";
+                                newWord += punc;
+                                translatedArray.add(newWord);
+                            } else {
+                                //Treat beginning y as consonant
+                                int puncstart = word.length() - punc.length();
+                                String newWord = word.substring(index, puncstart);
+                                newWord += chunkstr;
+                                newWord += "ay";
+                                newWord += punc;
+                                translatedArray.add(newWord);
+                            }
+                        }
                     }
                 }
-                int puncstart = word.length() - punc.length();
-                String newWord = word.substring(index, puncstart);
-                newWord += chunkstr;
-                newWord += "ay";
-                newWord += punc;
-                translatedArray.add(newWord);
+                else {
+                    int puncstart = word.length() - punc.length();
+                    String newWord = word.substring(index, puncstart);
+                    newWord += chunkstr;
+                    newWord += "ay";
+                    newWord += punc;
+                    translatedArray.add(newWord);
+                }
             }
-        }
-        return translatedArray;
+        } return translatedArray;
     }
 }
