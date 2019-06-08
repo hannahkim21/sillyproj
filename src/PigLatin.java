@@ -53,10 +53,24 @@ public class PigLatin extends Input {
                         break;
                     }
                 }
-                //Pig Latin Rule #3: If y is the last character in the chunk, treat it as a vowel and ignore
+                //Pig Latin Rule #3: Treat interior y's as vowels
+                //FIXME
+                String chunkstr = chunk.toString();
+                for (int i = 1; i < chunkstr.length(); i++) {
+                    if (chunkstr.charAt(i)=='y') {
+                        //FIXME
+                        String sub = chunkstr.substring(0,i+1);
+                        chunkstr = sub;
+                        int puncstart = word.length() - punc.length();
+                        String newWord = word.substring(index, puncstart);
+                        newWord += chunkstr;
+                        newWord += "yay";
+                        newWord += punc;
+                    }
+                }
                 int puncstart = word.length() - punc.length();
                 String newWord = word.substring(index, puncstart);
-                newWord += chunk.toString();
+                newWord += chunkstr;
                 newWord += "ay";
                 newWord += punc;
                 translatedArray.add(newWord);
