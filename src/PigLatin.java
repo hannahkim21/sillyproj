@@ -12,14 +12,23 @@ public class PigLatin extends Input {
             //Pig Latin Rule #1: Does the word begin with a vowel or consonant
             char first = word.charAt(0);
             //My Rule #1: I care about ending punctuation. I assume the input has correct punctuation.
-            char last = word.charAt(word.length()-1);
+            String punc = "";
+            int end = word.length() - 1;
+                while (end >= 0) {
+                    if (word.charAt(end)=='!' || word.charAt(end)=='.' || word.charAt(end)=='?') {
+                        punc = word.charAt(end) + punc;
+                    }
+                    end--;
+                }
             if (first=='a' || first=='A' || first=='e' || first=='E' || first=='i' ||
                     first=='I' || first=='o' || first=='O' || first=='u' || first=='U') {
                 StringBuilder newWord = new StringBuilder(word.length()+3);
-                if (last=='.' || last=='!' || last=='?') {
-                    newWord.append(word.substring(0,word.length()-1));
+                if (punc!="") {
+                    int lenpunc = punc.length();
+                    int puncstart = word.length() - lenpunc;
+                    newWord.append(word.substring(0,puncstart));
                     newWord.append("yay");
-                    newWord.append(last);
+                    newWord.append(word.substring(puncstart));
                     translatedArray.add(newWord.toString());
                 } else {
                     newWord.append(word);
@@ -44,9 +53,11 @@ public class PigLatin extends Input {
                     }
                 }
                 //Pig Latin Rule #3: If y is the last character in the chunk, treat it as a vowel and ignore
-                String newWord = word.substring(index);
+                int puncstart = word.length() - punc.length();
+                String newWord = word.substring(index, puncstart);
                 newWord += chunk.toString();
                 newWord += "ay";
+                newWord += punc;
                 translatedArray.add(newWord);
             }
         }
