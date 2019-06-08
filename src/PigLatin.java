@@ -44,7 +44,8 @@ public class PigLatin extends Input {
                     if (word.charAt(index)!='a' && word.charAt(index)!='A' && word.charAt(index)!='e' &&
                             word.charAt(index)!='E' && word.charAt(index)!='i' && word.charAt(index)!='I' &&
                             word.charAt(index)!='o' && word.charAt(index)!='O' && word.charAt(index)!='u' &&
-                            word.charAt(index)!='U') {
+                            word.charAt(index)!='U' && word.charAt(index)!='.' && word.charAt(index)!='!'
+                            && word.charAt(index)!='?'){
                         chunk.append(word.charAt(index));
                         index += 1;
                     }

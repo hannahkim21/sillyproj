@@ -23,4 +23,35 @@ public class TranslateTest {
         assertEquals(expect, item.translateInput());
     }
 
+    @Test
+    public void checkOneConstOnePunc() {
+        Input item = new Output();
+        item.readfromString("That!");
+        ArrayList<String> expect = new ArrayList<>();
+        expect.add("atThay!");
+        assertEquals(expect, item.translateInput());
+    }
+
+    @Test
+    public void shortSentPuncWithY() {
+        Input item = new Output();
+        item.readfromString("Don't know why.");
+        ArrayList<String> expect = new ArrayList<>();
+        expect.add("on'tDay");
+        expect.add("owknay");
+        expect.add("whyyay.");
+        assertEquals(expect, item.translateInput());
+    }
+
+    @Test
+    public void shortSentPunc() {
+        Input item = new Output();
+        item.readfromString("Hello world!");
+        ArrayList<String> expect = new ArrayList<>();
+        expect.add("elloHay");
+        expect.add("orldway!");
+        assertEquals(expect, item.translateInput());
+    }
+
+
 }
