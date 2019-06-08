@@ -11,12 +11,21 @@ public class PigLatin extends Input {
         for (String word : this.input) {
             //Pig Latin Rule #1: Does the word begin with a vowel or consonant
             char first = word.charAt(0);
+            //My Rule #1: I care about ending punctuation. I assume the input has correct punctuation.
+            char last = word.charAt(word.length()-1);
             if (first=='a' || first=='A' || first=='e' || first=='E' || first=='i' ||
                     first=='I' || first=='o' || first=='O' || first=='u' || first=='U') {
                 StringBuilder newWord = new StringBuilder(word.length()+3);
-                newWord.append(word);
-                newWord.append("yay");
-                translatedArray.add(newWord.toString());
+                if (last=='.' || last=='!' || last=='?') {
+                    newWord.append(word.substring(0,word.length()-1));
+                    newWord.append("yay");
+                    newWord.append(last);
+                    translatedArray.add(newWord.toString());
+                } else {
+                    newWord.append(word);
+                    newWord.append("yay");
+                    translatedArray.add(newWord.toString());
+                }
             }
             else {
                 //Pig Latin Rule #2: For consonants, chunk the contiguous consonants

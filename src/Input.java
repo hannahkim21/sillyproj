@@ -5,7 +5,6 @@ import java.util.Scanner;
 
 class Input {
     ArrayList<String> input = new ArrayList();
-
     /*
     * Take in standard input and write to an ArrayList.
     */
@@ -18,7 +17,6 @@ class Input {
         scan.close();
         return input;
     }
-
     /*
     * Go through input ArrayList and translate using Pig Latin conventions. Overridden in PigLatin.java.
     */
